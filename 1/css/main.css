@@ -1,0 +1,144 @@
+ @import url(http://allfont.ru/allfont.css?fonts=roboto-medium);
+ @font-face {
+    font-family: 'Gagalin';
+    src: url('../fonts/gagalin/Gagalin-Regular.eot');
+    src: url('../fonts/gagalin/Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gagalin/Gagalin-Regular.woff2') format('woff2'),
+        url('../fonts/gagalin/Gagalin-Regular.woff') format('woff'),
+        url('../fonts/gagalin/Gagalin-Regular.ttf') format('truetype'),
+        url('../fonts/gagalin/Gagalin-Regular.svg#Gagalin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Базовые настройки */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ body {
+  background-color: #efefec;
+}
+
+
+
+ h1 {
+  font-size: 45px;
+  font-family: "Gagalin";
+  font-weight: 300;
+  text-align: center;
+ 
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Gagalin";
+   font-weight: 300;
+  text-align: center;
+}
+ol, ul {list-style: none;}
+
+a, a:hover {text-decoration: none;}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {clear: both;}
+
+
+header {
+	position: relative;
+	padding: 10px;
+	background: #000;
+}
+.logo {float: left;
+margin-left: 50px;
+height: 50%;}
+.nav {float: right;}
+.nav li {float: left;}
+.nav li a,
+.menu {
+	display: block;
+	padding: 12px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+.nav li a:hover,
+.menu:hover {background: #515572;}
+
+.menu {display: none;}
+
+
+
+/* спец. настройки */
+
+.form {
+	
+background-color: rgb(255, 255, 255);
+ box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.35);
+ width: 309px;
+ height: 505px;
+
+}
+
+.form-title {
+	font-size: 'roboto-medium';
+	text-align: center;
+	margin: 1rem auto;
+}
+
+.form-img {
+	text-align: center;
+}
+
+.price {
+	display: inline-block;
+}
+.btn{
+	display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+	body {padding-top: 60px}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+	}
+	.logo img {height: 30px;}
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;
+	}
+	.nav li {float: none;
+		text-align: center;}
+	.nav li a {
+		color: #666;
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+	}
+	.nav li:first-child a {border-top: none;}
+	.nav li a:hover {
+		color: #333;
+		border-left: 3px solid #515572;
+		background: #f0f0f0;
+	}
+	.menu {
+		display: block;
+		float: right;
+		height: 50px;
+		margin: -10px 0;
+	}
+}
